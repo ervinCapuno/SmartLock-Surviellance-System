@@ -1,0 +1,13 @@
+:root{
+    font-size: 16px;
+}
+
+.accordions-container{
+    margin-left: 7rem;
+}
+/* .accordion-body {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+} 
+*/

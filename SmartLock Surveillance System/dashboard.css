@@ -1,3 +1,8 @@
+:root{
+    font-size: 16px;
+}
+
+/* layout for the dashboard */
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -23,7 +28,7 @@
         "Vibration Vibration Vibration Vibration Vibration Vibration Proximity Proximity Proximity Proximity Proximity Proximity";
 }
 
-
+/*style for the front card content and the back card content*/
 .flip-card-front, .flip-card-back {
     width: 100%;
     height: 100%;
@@ -37,19 +42,13 @@
     transition: transform 0.5s, border 0.5s;
     border: 2px solid transparent;
 }
-.front-door{
-    display: flex;
-    flex-direction: column;
-}
-.front-proximity{
+
+
+.front-door, .front-proximity, .front-vibration{
     display: flex;
     flex-direction: column;
 }
 
-.front-vibration{
-    display: flex;
-    flex-direction: column;
-}
 .cards-flipped .Door-State .flip-card-inner,
 .cards-flipped .Proximity .flip-card-inner,
 .cards-flipped .Vibration .flip-card-inner,
@@ -101,4 +100,13 @@
 
 .flip-card-back {
     transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 4%;
+    }
 }
