@@ -17,6 +17,7 @@
         <input type="checkbox" id="toggle-switch" onchange="toggleCards()">
     </div>
 
+    <!-- Flip card for Door State -->
     <div class="container">
         <div class="flip-card Door-State">
             <div class="flip-card-inner">
@@ -33,6 +34,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Flip Card for Proximity  -->
         <div class="flip-card Proximity">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -55,6 +58,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Flip Card for Vibration -->
         <div class="flip-card Vibration">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -70,7 +75,9 @@
         </div>
     </div>
 
-    <script src="navLoader.js"></script>
+    
+    <script src="navLoader.js" defer></script>
+    
     <script>
         function toggleCards() {
             var toggleSwitch = document.getElementById('toggle-switch');
